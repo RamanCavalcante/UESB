@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="946.0" layoutX="-132.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3d9ee" height="537.0" opacity="0.65" stroke="BLACK" strokeType="INSIDE" width="616.0" />
+      <GridPane layoutX="8.0" layoutY="4.0" prefHeight="521.0" prefWidth="607.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="366.0" minHeight="10.0" prefHeight="302.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Slider fx:id="sld_consumidor" max="15000.0" min="500.0" nodeOrientation="RIGHT_TO_LEFT" onMouseDragged="#onMouse" prefHeight="44.0" prefWidth="200.0" value="7500.0" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="15.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" right="3.0" />
+               </GridPane.margin>
+            </Text>
+            <ListView fx:id="listPedidos" opacity="0.67" prefHeight="283.0" prefWidth="193.0" GridPane.columnIndex="1" />
+            <ImageView fx:id="imgConsumidor" fitHeight="150.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/bob01.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgProdutor" fitHeight="150.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/squidward00.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnStart" mnemonicParsing="false" onAction="#start" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: pink;" text="Open Siri Cascudo" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="-60.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnStop" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: PINK;" text="Stop" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin></Button>
+            <Slider fx:id="sld_produtor" max="10000.0" min="1000.0" nodeOrientation="RIGHT_TO_LEFT" onMouseDragged="#onMouse" prefHeight="42.0" prefWidth="154.0" value="5500.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label fx:id="lbl_velProdutor" alignment="CENTER" prefHeight="27.0" prefWidth="39.0" style="-fx-background-color: pink;" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="40.0" right="2.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lbl_consumidor" alignment="CENTER" prefHeight="27.0" prefWidth="184.0" style="-fx-background-color: #ECF545;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listProntos" opacity="0.67" prefHeight="84.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="lbl_produtor" alignment="CENTER" prefHeight="27.0" prefWidth="179.0" style="-fx-background-color: #ECF545;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_velConsumidor" alignment="CENTER" prefHeight="27.0" prefWidth="40.0" style="-fx-background-color: pink;" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="2.0" top="200.0" />
+               </GridPane.margin>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="15.0" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="-7.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="15.0" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" right="4.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="15.0" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="-7.0" />
+               </GridPane.margin>
+            </Text>
+         </children>
+      </GridPane>
+      <Accordion />
+   </children>
+</AnchorPane>

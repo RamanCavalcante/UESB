@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="util.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fbcff" height="139.0" layoutX="126.0" layoutY="304.0" stroke="TRANSPARENT" strokeType="INSIDE" width="441.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#030303" height="42.0" layoutX="258.0" layoutY="197.0" stroke="TRANSPARENT" strokeType="INSIDE" width="67.0" />
+      <ImageView fitHeight="303.0" fitWidth="986.0" layoutX="-13.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/circuito/circuit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="250.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/circuito/tunnelPart2.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#030303" height="42.0" layoutX="621.0" layoutY="196.0" stroke="TRANSPARENT" strokeType="INSIDE" width="67.0" />
+      <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="613.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/circuito/tunnelPart2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgTrain2" fitHeight="37.0" fitWidth="52.0" layoutX="18.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/train2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgTrain1" fitHeight="33.0" fitWidth="59.0" layoutX="913.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/train1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="93.0" layoutX="642.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/circuito/tunnelPart1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="93.0" layoutX="279.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/circuito/tunnelPart1.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="159.0" layoutY="314.0" prefHeight="114.0" prefWidth="374.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="74.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="313.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Slider fx:id="sliderTrain1" majorTickUnit="10.0" min="15.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="292.0" showTickMarks="true" style="-fx-background-color: F72345;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Slider fx:id="sliderTrain2" majorTickUnit="10.0" min="15.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="14.0" prefWidth="292.0" showTickMarks="true" style="-fx-background-color: #F72345;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="imgTrain11" fitHeight="37.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/train1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgTrain21" fitHeight="42.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/train2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane layoutX="127.0" layoutY="21.0" prefHeight="203.0" prefWidth="726.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="imgRick1" fitHeight="132.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/morgado.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgRick2" fitHeight="139.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../img/morgado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="btnReset" layoutX="613.0" layoutY="357.0" mnemonicParsing="false" onAction="#reset" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: #1fbcff;" text="reset" textFill="#f72345">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

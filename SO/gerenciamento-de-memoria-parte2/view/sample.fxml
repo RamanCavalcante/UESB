@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #E3F7FF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="util.controller.Controller">
+   <center>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="119.0" prefWidth="396.0">
+                     <children>
+                        <HBox fx:id="hbox_listMemory" prefHeight="67.0" prefWidth="396.0" />
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" opacity="0.72" prefHeight="17.0" prefWidth="599.0" style="-fx-background-color: #9edfb0;" text="Memoria">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="PaneMemory" prefHeight="375.0" prefWidth="396.0">
+                     <children>
+                        <GridPane layoutX="5.0" layoutY="6.0" prefHeight="301.0" prefWidth="384.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lbl_00" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8000" />
+                              <Label fx:id="lbl_07" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8007" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_06" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8006" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_05" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8005" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_04" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8004" GridPane.columnIndex="4" />
+                              <Label fx:id="lbl_08" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8008" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_03" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8003" GridPane.columnIndex="3" />
+                              <Label fx:id="lbl_02" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8002" GridPane.columnIndex="2" />
+                              <Label fx:id="lbl_01" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8001" GridPane.columnIndex="1" />
+                              <Label fx:id="lbl_13" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8013" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_12" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8012" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_11" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8011" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_10" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8010" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_09" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8009" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_19" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8019" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_18" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8018" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_17" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8017" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_16" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8016" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_15" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8015" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_14" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8014" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_26" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8026" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_25" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8025" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_24" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8024" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_23" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8023" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_22" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8022" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_21" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8021" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_20" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8020" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_29" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8029" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_28" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8028" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_27" alignment="CENTER" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" text="#8027" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_border00" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" />
+                              <Label fx:id="lbl_border01" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" />
+                              <Label fx:id="lbl_border02" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" />
+                              <Label fx:id="lbl_border03" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" />
+                              <Label fx:id="lbl_border04" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" />
+                              <Label fx:id="lbl_border05" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_border09" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_border08" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_border07" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_border06" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="lbl_border11" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_border14" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_border13" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_border12" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_border10" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.rowIndex="2" />
+                              <Label fx:id="lbl_border15" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_border18" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_border17" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_border16" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_border19" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                              <Label fx:id="lbl_border21" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_border24" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_border23" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_border22" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_border20" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.rowIndex="4" />
+                              <Label fx:id="lbl_border25" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_border29" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_border28" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_border27" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label fx:id="lbl_border26" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="74.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <Line endX="549.0000610351562" endY="-1.0" layoutX="52.0" layoutY="315.0" startX="-269.0" startY="-1.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="400.0" prefWidth="204.0" spacing="2.0" style="-fx-background-color: #8F9192;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" opacity="0.5" prefHeight="17.0" prefWidth="599.0" style="-fx-background-color: #9edfb0;" text="Finalizados">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox fx:id="vbox_listFinish" prefHeight="368.0" prefWidth="194.0" style="-fx-background-color: #a9b7e0;" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </right>
+      </BorderPane>
+   </center>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="215.0" spacing="2.0" style="-fx-background-color: #8F9192;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="50.0" prefWidth="196.0">
+               <children>
+                  <Label alignment="CENTER" opacity="0.5" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #9edfb0;" text="Alocacao" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MenuButton fx:id="menuTypesAllocations" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" style="-fx-background-color: #c9f89d;" text="Tipo Alocacao" textAlignment="CENTER">
+                    <items>
+                        <CheckMenuItem fx:id="first_fit" mnemonicParsing="false" text="First-Fit" />
+                        <CheckMenuItem fx:id="best_fit" mnemonicParsing="false" text="Best-Fit" />
+                        <CheckMenuItem fx:id="worst_fit" mnemonicParsing="false" text="Worst-Fit" />
+                        <CheckMenuItem fx:id="fast_fit" mnemonicParsing="false" text="Fast-Fit" />
+                    </items>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <HBox prefHeight="60.0" prefWidth="173.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btn_create_process" mnemonicParsing="false" prefHeight="27.0" prefWidth="206.0" style="-fx-background-color: #c9f89d;" text="Criar Processo">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Button>
+                        <Spinner fx:id="spinner_process" prefHeight="25.0" prefWidth="109.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Spinner>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" opacity="0.5" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #9edfb0;" text=" Fila de processo">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <VBox fx:id="vbox_listProcesses" prefHeight="291.0" prefWidth="173.0" style="-fx-background-color: #a9b7e0;" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <bottom>
+      <Pane prefHeight="37.0" prefWidth="815.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="796.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/barBorders.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="paneFastFit" layoutX="293.0" layoutY="5.0" prefHeight="32.0" prefWidth="521.0" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,7 @@
+.icon-button {
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.icon-button:hover{
+	-fx-cursor: hand;	
+}

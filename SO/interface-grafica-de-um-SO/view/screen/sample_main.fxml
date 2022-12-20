@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane fx:id="AnchorHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMain">
+   <children>
+      <ImageView fitHeight="446.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="337.0" prefHeight="23.0" prefWidth="640.0" style="-fx-background-color: #2e5eac;">
+         <children>
+            <Button fx:id="btn_iniciar" layoutX="-8.0" layoutY="-6.0" mnemonicParsing="false" onAction="#menuStart" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: transparent;" styleClass="icon-button">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/btn_iniciar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_word_bar" alignment="TOP_CENTER" layoutX="78.0" mnemonicParsing="false" onAction="#openEditor" prefHeight="23.0" prefWidth="35.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo_word.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_galeria_bar" alignment="TOP_CENTER" layoutX="113.0" mnemonicParsing="false" onAction="#open_galeria" prefHeight="16.0" prefWidth="22.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/btn_galeria.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></Pane>
+      <VBox fx:id="box_iniciar" alignment="BOTTOM_LEFT" layoutY="125.0" prefHeight="212.0" prefWidth="198.0" style="-fx-background-color: #228AFF;" visible="false">
+         <children>
+            <Button fx:id="btn_word_start" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#openEditor" prefHeight="28.0" prefWidth="39.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="26.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo_word.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_galeria" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#open_galeria">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/btn_galeria.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Pane prefHeight="22.0" prefWidth="198.0" style="-fx-background-color: #2e5eac;">
+               <children>
+                  <Button fx:id="btn_encerrar" layoutX="124.0" mnemonicParsing="false" onAction="#closeSO" prefHeight="13.0" prefWidth="74.0" style="-fx-background-color: #2e5eac;" text="Encerrar">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/btn_encerrar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button fx:id="window_editor" layoutX="87.0" layoutY="24.0" mnemonicParsing="false" prefHeight="312.0" prefWidth="515.0" style="-fx-background-color: #1c5560;" visible="false">
+         <graphic>
+            <BorderPane fx:id="editor" prefHeight="289.0" prefWidth="356.0">
+               <top>
+                  <MenuBar prefHeight="0.0" prefWidth="311.0" BorderPane.alignment="CENTER">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem fx:id="btn_save" mnemonicParsing="false" onAction="#onSave" text="Save" />
+                              <MenuItem fx:id="btn_load" mnemonicParsing="false" onAction="#onLoad" text="Load" />
+                              <MenuItem fx:id="btn_close" mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </top>
+               <center>
+                  <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="200.0" prefWidth="506.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </Button>
+      <Button fx:id="window_galeria" layoutX="63.0" layoutY="17.0" mnemonicParsing="false" prefHeight="312.0" prefWidth="515.0" style="-fx-background-color: #1c5560;" visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <graphic>
+            <BorderPane fx:id="editor1" prefHeight="289.0" prefWidth="356.0">
+               <top>
+                  <MenuBar prefHeight="0.0" prefWidth="311.0" BorderPane.alignment="CENTER">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem fx:id="btn_save1" mnemonicParsing="false" onAction="#onSave" text="Save" />
+                              <MenuItem fx:id="btn_load1" mnemonicParsing="false" onAction="#onLoad" text="Load" />
+                              <MenuItem fx:id="btn_close1" mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </top>
+               <center>
+                  <ImageView fx:id="imgView_galeria" fitHeight="250.0" fitWidth="343.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+               <right>
+                  <Button fx:id="btn_seta_right" mnemonicParsing="false" onAction="#passIMG" prefHeight="47.0" prefWidth="9.0" styleClass="icon-button" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-button">
+                           <image>
+                              <Image url="@../img/btn_seta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </right>
+               <left>
+                  <Button fx:id="btn_seta_left" mnemonicParsing="false" onAction="#passIMG" prefHeight="47.0" prefWidth="9.0" rotate="180.0" styleClass="icon-button" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-button">
+                           <image>
+                              <Image url="@../img/btn_seta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </left>
+            </BorderPane>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
