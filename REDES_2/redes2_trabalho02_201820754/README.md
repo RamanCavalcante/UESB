@@ -39,13 +39,8 @@ https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.htm
 * Digite no terminal
 ```
   Javac Principal.java
-<<<<<<< HEAD
-  java Principal 
-```
-=======
   java Principal
-  
-  ```
+```
 ![produtor](simulation.gif)
->>>>>>> 6bb9b620ebc195dd74b815110d62b9f93ffb9193
+
 
