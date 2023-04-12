@@ -1,9 +1,17 @@
 
-# Produtor consumidor
+<<<<<<< HEAD
+# Algoritmo de Dijkstra
 
 # Contexto
 
 Esse trabalho com um problema de roteamento, utilizou o algoritmo de djikstra para encontrar o menor caminho entre dois pontos, com um grafo não-dirigido para representar uma rub-rede
+=======
+# Algoritmo de Dijkstra
+
+# Contexto
+
+Esse trabalho com um problema de roteamento, utilizou o algoritmo de Dijkstra para encontrar o menor caminho entre dois pontos, com um grafo não-dirigido para representar uma rub-rede
+>>>>>>> 6bb9b620ebc195dd74b815110d62b9f93ffb9193
 
 ### Status do projeto: FINALIZADO
 
@@ -31,5 +39,13 @@ https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.htm
 * Digite no terminal
 ```
   Javac Principal.java
+<<<<<<< HEAD
   java Principal 
 ```
+=======
+  java Principal
+  
+  ```
+![produtor](simulation.gif)
+>>>>>>> 6bb9b620ebc195dd74b815110d62b9f93ffb9193
+
